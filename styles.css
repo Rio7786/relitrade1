@@ -1,0 +1,90 @@
+/* ReliTrade — polished custom styles (overrides Tailwind where needed) */
+
+:root{
+  --blue:#2563eb;
+  --deep:#0f172a;
+  --green:#16a34a;
+  --muted:#6b7280;
+}
+
+/* base smoothing */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* navbar transitions */
+nav { transition: all .28s ease; }
+nav.scrolled {
+  background: rgba(255,255,255,0.98);
+  box-shadow: 0 12px 40px rgba(2,6,23,0.06);
+  backdrop-filter: blur(8px);
+}
+
+/* reveal animation base */
+.reveal, .testimonial {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity 0.7s cubic-bezier(.2,.9,.25,1), transform 0.7s cubic-bezier(.2,.9,.25,1);
+  will-change: opacity, transform;
+}
+.reveal.visible, .testimonial.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* stagger by position for sections with many reveal children */
+section#why .reveal:nth-child(1){ transition-delay: .06s; }
+section#why .reveal:nth-child(2){ transition-delay: .12s; }
+section#why .reveal:nth-child(3){ transition-delay: .18s; }
+section#why .reveal:nth-child(4){ transition-delay: .24s; }
+
+/* steps delay support via data-delay attr (set in JS) */
+.card[data-delay="120"]{ transition-delay: .12s; }
+.card[data-delay="240"]{ transition-delay: .24s; }
+
+/* hover lifts */
+.shadow:hover {
+  transform: translateY(-6px);
+  transition: transform .28s ease, box-shadow .28s ease;
+  box-shadow: 0 24px 48px rgba(37,99,235,0.08);
+}
+
+/* CTA micro animation */
+a.bg-green-600:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(22,163,74,0.18);
+}
+
+/* responsive tweaks */
+@media (max-width: 768px) {
+  h1 { font-size: 1.9rem !important; }
+  /* ensure sections have breathing room */
+  header, main, footer { padding-left: 18px; padding-right: 18px; }
+}
+
+/* small utility to ensure headings use the bright blue */
+h1, h2, h3 { color: var(--blue); }
+/* Navbar Scroll Animation & Logo Motion */
+nav {
+  transition: all 0.4s ease;
+}
+
+nav.scrolled {
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.1);
+  backdrop-filter: blur(10px);
+  padding-top: 0.4rem !important;
+  padding-bottom: 0.4rem !important;
+}
+
+/* Shrink logo on scroll */
+nav img.logo-scroll {
+  transition: all 0.3s ease-in-out;
+}
+
+nav.scrolled img.logo-scroll {
+  transform: scale(0.85);
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.15));
+}
