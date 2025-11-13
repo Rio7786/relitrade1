@@ -176,46 +176,76 @@
   <!-- WHY (primary section) -->
   <main>
     <section id="why" class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto text-center">
-        <h2 class="text-4xl font-extrabold text-[#2563eb] mb-4 reveal">Why ReliTrade Is Different</h2>
-        <p class="text-lg text-[#1f2937] mb-12 reveal">Technology + Trust = Better investing. We combine speed, security and intelligent tools to help investors win.</p>
+  <div class="max-w-7xl mx-auto text-center">
+    
+    <h2 class="text-4xl font-extrabold text-[#2563eb] mb-4 fade-up">
+      Why ReliTrade Is Different
+    </h2>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
-          <article class="p-8 bg-blue-50 rounded-2xl shadow hover:shadow-lg transition reveal">
-            <div class="w-14 h-14 rounded-xl bg-[#2563eb] flex items-center justify-center mb-4">
-              <!-- speed icon -->
-              <svg class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h6l2-6 4 12 4-6"/></svg>
-            </div>
-            <h3 class="text-xl font-bold text-[#2563eb] mb-2">Lightning Fast</h3>
-            <p class="text-[#1f2937]">Execute orders in milliseconds with our optimized infrastructure.</p>
-          </article>
+    <p class="text-lg text-[#1f2937] mb-12 fade-up" style="animation-delay:.15s;">
+      Technology + Trust = Better investing. We combine speed, security and intelligent tools to help investors win.
+    </p>
 
-          <article class="p-8 bg-green-50 rounded-2xl shadow hover:shadow-lg transition reveal">
-            <div class="w-14 h-14 rounded-xl bg-green-600 flex items-center justify-center mb-4">
-              <svg class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l8 4v5c0 5.25-3.5 9.85-8 11-4.5-1.15-8-5.75-8-11V6z"/></svg>
-            </div>
-            <h3 class="text-xl font-bold text-[#2563eb] mb-2">Bank-Grade Security</h3>
-            <p class="text-[#1f2937]">End-to-end encryption, secure custody and SEBI compliance.</p>
-          </article>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
 
-          <article class="p-8 bg-blue-50 rounded-2xl shadow hover:shadow-lg transition reveal">
-            <div class="w-14 h-14 rounded-xl bg-[#0f172a] flex items-center justify-center mb-4">
-              <svg class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 3v18h18"/><path d="M7 13v6M12 7v12M17 3v16"/></svg>
-            </div>
-            <h3 class="text-xl font-bold text-[#2563eb] mb-2">Smart Analytics</h3>
-            <p class="text-[#1f2937]">AI signals, watchlists and real-time market insights.</p>
-          </article>
-
-          <article class="p-8 bg-green-50 rounded-2xl shadow hover:shadow-lg transition reveal">
-            <div class="w-14 h-14 rounded-xl bg-green-600 flex items-center justify-center mb-4">
-              <svg class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h18v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8z"/></svg>
-            </div>
-            <h3 class="text-xl font-bold text-[#2563eb] mb-2">Zero Brokerage</h3>
-            <p class="text-[#1f2937]">Trade core products without commission — keep more returns.</p>
-          </article>
+      <!-- CARD TEMPLATE -->
+      <article class="p-10 bg-blue-50 rounded-3xl shadow-md hover:shadow-xl transition-all reveal flex flex-col items-center text-center">
+        <div class="w-16 h-16 rounded-2xl bg-[#2563eb] flex items-center justify-center mb-5">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M13 3L4 14h7l-1 7 9-11h-7l1-7z"/>
+          </svg>
         </div>
-      </div>
-    </section>
+        <h3 class="text-xl font-bold text-[#2563eb] mb-2">Lightning Fast</h3>
+        <p class="text-[#1f2937] leading-relaxed">
+          Execute orders in milliseconds with our optimized infrastructure.
+        </p>
+      </article>
+
+      <article class="p-10 bg-green-50 rounded-3xl shadow-md hover:shadow-xl transition-all reveal flex flex-col items-center text-center" style="animation-delay:.15s;">
+        <div class="w-16 h-16 rounded-2xl bg-green-600 flex items-center justify-center mb-5">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M12 2l7 4v5c0 5-3 9-7 10-4-1-7-5-7-10V6z"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-[#2563eb] mb-2">Bank-Grade Security</h3>
+        <p class="text-[#1f2937] leading-relaxed">
+          End-to-end encryption, secure custody and SEBI compliance.
+        </p>
+      </article>
+
+      <article class="p-10 bg-blue-50 rounded-3xl shadow-md hover:shadow-xl transition-all reveal flex flex-col items-center text-center" style="animation-delay:.3s;">
+        <div class="w-16 h-16 rounded-2xl bg-[#0f172a] flex items-center justify-center mb-5">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M4 20V10M9 20V4M14 20v-6M19 20v-8"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-[#2563eb] mb-2">Smart Analytics</h3>
+        <p class="text-[#1f2937] leading-relaxed">
+          AI signals, watchlists and real-time market insights.
+        </p>
+      </article>
+
+      <article class="p-10 bg-green-50 rounded-3xl shadow-md hover:shadow-xl transition-all reveal flex flex-col items-center text-center" style="animation-delay:.45s;">
+        <div class="w-16 h-16 rounded-2xl bg-green-600 flex items-center justify-center mb-5">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <rect x="2" y="7" width="20" height="12" rx="2" ry="2"/>
+            <path d="M2 11h20"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-[#2563eb] mb-2">Zero Brokerage</h3>
+        <p class="text-[#1f2937] leading-relaxed">
+          Trade core products without commission — keep more returns.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
 
     <!-- HOW IT WORKS (3 steps) -->
    <!-- Why ReliTrade Is Different -->
