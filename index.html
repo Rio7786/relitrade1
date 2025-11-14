@@ -173,74 +173,113 @@
 </header>
 
 
-  <!-- WHY (primary section) -->
-  <main>
-    <section id="why" class="py-20 bg-white">
+<!-- FEATURES SECTION -->
+<section id="features" class="py-24 bg-white">
   <div class="max-w-7xl mx-auto text-center">
     
-    <h2 class="text-4xl font-extrabold text-[#2563eb] mb-4 fade-up">
-      Why ReliTrade Is Different
+    <h2 class="text-4xl font-extrabold mb-4 reveal">
+      Powerful Tools Built for Every Investor
     </h2>
 
-    <p class="text-lg text-[#1f2937] mb-12 fade-up" style="animation-delay:.15s;">
-      Technology + Trust = Better investing. We combine speed, security and intelligent tools to help investors win.
+    <p class="text-lg text-[#1f2937] mb-12 reveal">
+      Trade smarter with lightning-fast technology, intelligent insights, and a seamless app experience.
     </p>
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
+    <!-- GRID: 3 + 3 -->
+    <div class="grid md:grid-cols-3 gap-8 px-6">
 
-      <!-- CARD TEMPLATE -->
-      <article class="p-10 bg-blue-50 rounded-3xl shadow-md hover:shadow-xl transition-all reveal flex flex-col items-center text-center">
-        <div class="w-16 h-16 rounded-2xl bg-[#2563eb] flex items-center justify-center mb-5">
-          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2"
-               stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-            <path d="M13 3L4 14h7l-1 7 9-11h-7l1-7z"/>
+      <!-- CARD 1 -->
+      <div class="bg-blue-50 p-10 rounded-3xl shadow border border-blue-100 reveal card" data-delay="0">
+        <div class="w-16 h-16 bg-[var(--blue)] rounded-xl flex items-center justify-center mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 3v18h18M7 14l3 3 7-8" />
           </svg>
         </div>
-        <h3 class="text-xl font-bold text-[#2563eb] mb-2">Lightning Fast</h3>
-        <p class="text-[#1f2937] leading-relaxed">
-          Execute orders in milliseconds with our optimized infrastructure.
+        <h3 class="text-xl font-bold mb-2">Advanced Charting</h3>
+        <p class="text-[var(--deep)]">
+          Real-time, TradingView-style charts built for serious investors.
         </p>
-      </article>
+      </div>
 
-      <article class="p-10 bg-green-50 rounded-3xl shadow-md hover:shadow-xl transition-all reveal flex flex-col items-center text-center" style="animation-delay:.15s;">
-        <div class="w-16 h-16 rounded-2xl bg-green-600 flex items-center justify-center mb-5">
-          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2"
-               stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-            <path d="M12 2l7 4v5c0 5-3 9-7 10-4-1-7-5-7-10V6z"/>
+      <!-- CARD 2 -->
+      <div class="bg-green-50 p-10 rounded-3xl shadow border border-green-100 reveal card" data-delay="120">
+        <div class="w-16 h-16 bg-[var(--green)] rounded-xl flex items-center justify-center mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6 6 0 10-12 0v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
           </svg>
         </div>
-        <h3 class="text-xl font-bold text-[#2563eb] mb-2">Bank-Grade Security</h3>
-        <p class="text-[#1f2937] leading-relaxed">
-          End-to-end encryption, secure custody and SEBI compliance.
+        <h3 class="text-xl font-bold mb-2">Smart Alerts</h3>
+        <p class="text-[var(--deep)]">
+          Price, volume, trend and portfolio alerts delivered instantly.
         </p>
-      </article>
+      </div>
 
-      <article class="p-10 bg-blue-50 rounded-3xl shadow-md hover:shadow-xl transition-all reveal flex flex-col items-center text-center" style="animation-delay:.3s;">
-        <div class="w-16 h-16 rounded-2xl bg-[#0f172a] flex items-center justify-center mb-5">
-          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2"
-               stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-            <path d="M4 20V10M9 20V4M14 20v-6M19 20v-8"/>
+      <!-- CARD 3 -->
+      <div class="bg-blue-50 p-10 rounded-3xl shadow border border-blue-100 reveal card" data-delay="240">
+        <div class="w-16 h-16 bg-[var(--blue)] rounded-xl flex items-center justify-center mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 8c-3.314 0-6 2.239-6 5v4h12v-4c0-2.761-2.686-5-6-5z" />
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 8V6m0 0a2 2 0 114 0v2m-4-2a2 2 0 00-4 0v2" />
           </svg>
         </div>
-        <h3 class="text-xl font-bold text-[#2563eb] mb-2">Smart Analytics</h3>
-        <p class="text-[#1f2937] leading-relaxed">
-          AI signals, watchlists and real-time market insights.
+        <h3 class="text-xl font-bold mb-2">One-Tap Fund Transfer</h3>
+        <p class="text-[var(--deep)]">
+          Fast UPI & NetBanking deposits for seamless trading.
         </p>
-      </article>
+      </div>
 
-      <article class="p-10 bg-green-50 rounded-3xl shadow-md hover:shadow-xl transition-all reveal flex flex-col items-center text-center" style="animation-delay:.45s;">
-        <div class="w-16 h-16 rounded-2xl bg-green-600 flex items-center justify-center mb-5">
-          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2"
-               stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-            <rect x="2" y="7" width="20" height="12" rx="2" ry="2"/>
-            <path d="M2 11h20"/>
+      <!-- CARD 4 -->
+      <div class="bg-green-50 p-10 rounded-3xl shadow border border-green-100 reveal card" data-delay="0">
+        <div class="w-16 h-16 bg-[var(--green)] rounded-xl flex items-center justify-center mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 11c-1.105 0-2-.895-2-2V7a2 2 0 114 0v2c0 1.105-.895 2-2 2zm0 0v6m-6-6h12" />
           </svg>
         </div>
-        <h3 class="text-xl font-bold text-[#2563eb] mb-2">Zero Brokerage</h3>
-        <p class="text-[#1f2937] leading-relaxed">
-          Trade core products without commission — keep more returns.
+        <h3 class="text-xl font-bold mb-2">Instant KYC</h3>
+        <p class="text-[var(--deep)]">
+          Complete account verification in just a few minutes.
         </p>
-      </article>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="bg-blue-50 p-10 rounded-3xl shadow border border-blue-100 reveal card" data-delay="120">
+        <div class="w-16 h-16 bg-[var(--blue)] rounded-xl flex items-center justify-center mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M9 17v-6l-2 2m8-2v6m-3-4l2-2m1 4v-3" />
+            <circle cx="12" cy="12" r="9" stroke-width="2" fill="none"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold mb-2">Watchlists & Insights</h3>
+        <p class="text-[var(--deep)]">
+          Personalized analytics to track stocks & outperform the market.
+        </p>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="bg-green-50 p-10 rounded-3xl shadow border border-green-100 reveal card" data-delay="240">
+        <div class="w-16 h-16 bg-[var(--green)] rounded-xl flex items-center justify-center mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 12h18M3 6h18M3 18h18" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold mb-2">Ultra-Fast App</h3>
+        <p class="text-[var(--deep)]">
+          Experience < 2-second load times with our optimized mobile platform.
+        </p>
+      </div>
 
     </div>
   </div>
